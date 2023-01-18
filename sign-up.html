@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Sign up</title>
+ <link rel="stylesheet" href="../CSS/sign-up.css" />
+ <script src="Js/main.js" defer></script>
+</head>
+<body>
+ <!--logo-->
+ <div class="container">
+  <img src="images/logo.png" class="logo" alt="student intellect logo" />
+  <div class="nav">
+   <ul>
+    <li><i>Have an account?</i></li>
+    <li>
+     <a href="index.html"><button class="signup">Login</button></a>
+    </li>
+   </ul>
+  </div>
+ </div>
+
+ <!--hero and form-->
+ <div class="container app">
+  <div class="hero">
+   <h3>DOWNLOAD STUDY MATERIALS</h3>
+   <p>
+    Download study resources ( past exam papers , memos , assignments
+    and projects) from the <strong><a href="#"> University of Limpopo.</a></strong>
+    Student Intellect's primary goal is to make <i>quality tutoring</i> and
+    <i>resources</i> accessible to all students with ease , promoting better
+    learning in South African Universities.
+   </p>
+
+   <div class="images">
+    <div class="card">
+     <div class="card-img">
+      <img src="images/male-student.jpg" alt="Picture of University student" />
+     </div>
+    </div>
+
+    <div class="card">
+     <div class="card-img-1">
+      <img src="images/female-student.jpg" alt="A picture of female university student" />
+     </div>
+    </div>
+   </div>
+
+  </div>
+
+  <div class="form">
+   <h3>Create an account</h3>
+   <form action="#" onsubmit="return validate()">
+
+    <div class="form-item">
+     <label class="label" for="email">
+      Email<input type="text" class="input" placeholder="Enter your email" required id="mail"/>
+     </label>
+    </div>
+
+    <div class="form-item">
+     <label class="label" for="username">
+      Username<input type="text" class="input" placeholder="Pick a username" required id="username" />
+     </label>
+    </div>
+
+
+    <div class="form-item">
+     <label class="label" for="password">
+      Password
+      <input type="password" class="input" placeholder="Create password" required id="password"/>
+     </label>
+    </div>
+
+    <div class="form-item">
+     <label class="label" for="confirmation">
+      Confirm<input type="password" class="input" placeholder="Confirm password" required id="confirm"/>
+     </label>
+    </div>
+    <div class="form-item">
+
+     <label for="remember"> <input class="check" type="checkbox" id="terms"/> I accept all <a href="terms.html"
+       title="Student Intellect Terms and Conditions">Terms and Conditons.</a> </label>
+    </div>
+    <div class="form-item">
+     <input type="submit" value="Sign up" class="login btn"/>
+
+   </form>
+  </div>
+ </div>
+
+</body>
+
+</html>

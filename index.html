@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Intellect</title>
+  <link rel="icon" type="image/x-icon" href="/images/fevicon.ico">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="Js/main.js" defer></script>
+</head>
+
+<body>
+  <!--logo-->
+  <div class="container">
+    <img src="images/logo.png" class="logo" alt="student intellect logo" />
+    <div class="nav">
+      <ul>
+        <li><i>Not a member?</i></li>
+        <li>
+          <a href="sign-up.html"><button class="signup">Sign up now</button></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--hero and form-->
+
+  <div class="container app">
+    <div class="hero">
+
+      <h3>DOWNLOAD STUDY MATERIALS</h3>
+      <p>
+        Download study resources ( past exam papers , memos , assignments
+        and projects) from the <strong><a href="#"> University of Limpopo.</a></strong>
+        Student Intellect's primary goal is to make <i>quality tutoring</i> and
+        <i>resources</i> accessible to all students with ease , promoting better
+        learning in South African Universities.
+      </p>
+
+      <div class="images">
+        <div class="card">
+          <div class="card-img">
+            <img src="images/male-student.jpg" alt="Picture of University student" />
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-1">
+            <img src="images/female-student.jpg" alt="A picture of female university student" />
+          </div>
+        </div>
+      </div>
+      <a href="https://play.google.com/store/apps/details/Student_Intellect?id=com.avidco.studentintellect&gl=US&pli=1" target="_new"><img title="Download Our App" style="height: 100px" src="images/google.png"
+          alt="download our app from the googleplaystore" /></a>
+
+    </div>
+
+    <div class="form">
+      <button class="google-log-in">
+        Log in with
+        Google
+      </button>
+      <h6>-or-</h6>
+      <form action="#">
+
+        <div class="form-item">
+          <label class="label" for="email">
+            Email<input type="text" class="input" placeholder="Enter your email" required/>
+          </label>
+        </div>
+
+
+        <div class="form-item">
+          <label class="label" for="password">
+            Password
+            <input type="password" class="input" placeholder="Password" required />
+          </label>
+        </div>
+        <div class="form-item">
+
+          <label for="remember"> <input class="check" type="checkbox" /> Remember me? </label>
+        </div>
+        <div class="form-item">
+          <input type="submit" value="Log in" class="login btn" onclick="login()" />
+          <div class="form-item">
+            <p>Fogort your password? <a href="#">Recover password</a></p>
+          </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
