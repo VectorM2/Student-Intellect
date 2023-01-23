@@ -3,94 +3,126 @@
 
 <head>
  <meta charset="UTF-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>Sign up</title>
- <link rel="stylesheet" href="../CSS/sign-up.css" />
- <script src="Js/main.js" defer></script>
+ <title>Student Intellect</title>
+ <link rel="stylesheet" href="styles.css" />
+ <script defer src="plugins/js/bootstrap.bundle.min.js"></script>
+ <link rel="stylesheet" href="plugins/css/bootstrap.min.css" />
+ <link rel="icon" type="image/x-icon" href="/images/fevicon.ico" />
+ <link href="css/login.css" rel="stylesheet" />
 </head>
+
 <body>
- <!--logo-->
- <div class="container">
-  <img src="images/logo.png" class="logo" alt="student intellect logo" />
-  <div class="nav">
-   <ul>
-    <li><i>Have an account?</i></li>
-    <li>
-     <a href="index.html"><button class="signup">Login</button></a>
-    </li>
-   </ul>
+ <!--Navbar-->
+ <nav class="navbar navbar-expand-sm navbar-light bg-light shadow-sm">
+  <div class="container">
+   <a href="#" class="navbar-brand logo">
+    <h1></h1>
+   </a>
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+    <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="menu">
+    <ul class="navbar-nav ms-auto">
+     <li><i>Have an account?</i></li>
+     <li><a href="index.html"><button class="signup">Login</button></a>
+     </li>
+    </ul>
+   </div>
   </div>
- </div>
+ </nav>
 
- <!--hero and form-->
- <div class="container app">
-  <div class="hero">
-   <h3>DOWNLOAD STUDY MATERIALS</h3>
-   <p>
-    Download study resources ( past exam papers , memos , assignments
-    and projects) from the <strong><a href="#"> University of Limpopo.</a></strong>
-    Student Intellect's primary goal is to make <i>quality tutoring</i> and
-    <i>resources</i> accessible to all students with ease , promoting better
-    learning in South African Universities.
-   </p>
+ <!--form and hero-->
+ <div class="d-md-flex container py-2">
 
-   <div class="images">
-    <div class="card">
-     <div class="card-img">
-      <img src="images/male-student.jpg" alt="Picture of University student" />
+  <div class="showcase p-1">
+   <div class="text hero">
+    <h4>DOWNLOAD STUDY MATERIALS</h4>
+    <p>
+     Download study resources ( past exam papers , memos , assignments
+     and projects) from the
+     <strong><a href="#"> University of Limpopo.</a></strong> Student
+     Intellect's primary goal is to make <i>quality tutoring</i> and
+     <i>resources</i> accessible to all students with ease , promoting
+     better learning in South African Universities.
+    </p>
+
+    <div class="images">
+     <div class="cards">
+      <div class="card-img">
+       <img src="images/male-student.jpg" alt="Picture of University student" />
+      </div>
+     </div>
+
+     <div class="cards">
+      <div class="card-img-1">
+       <img src="images/female-student.jpg" alt="A picture of female university student" />
+      </div>
      </div>
     </div>
+    <a href="https://play.google.com/store/apps/details/Student_Intellect?id=com.avidco.studentintellect&gl=US&pli=1"
+     target="_new"><img class="googleplay" title="Download Our App" style="height: 2.5rem" src="images/google.png"
+      alt="download our app from the googleplaystore" /></a>
+   </div>
+  </div>
 
-    <div class="card">
-     <div class="card-img-1">
-      <img src="images/female-student.jpg" alt="A picture of female university student" />
+  <div class="login-form p-1">
+    <h3 class="text-center">Create an account</h3>
+    <form action="#" class="form-group">
+
+     <div class="form-item">
+      <label class="form-label" for="email">Email</label>
+      <input type="text" class="input form-control" placeholder="Enter your email" required />
      </div>
-    </div>
+
+     <div class="form-item">
+      <label class="form-label" for="password">Username</label>
+      <input type="text" class="input form-control" placeholder="Pick Username" required />
+     </div>
+
+
+     <div class="form-item">
+      <label class="form-label" for="password">Password</label>
+      <input type="password" class="input form-control" placeholder="Create password" required />
+     </div>
+
+     <div class="form-item">
+      <label class="form-label" for="password">Confirm password</label>
+      <input type="password" class="input form-control" placeholder="Confirm password" required />
+     </div>
+
+
+     <div class="form-item form-check">
+      <label for="form-label remember"> I accept all <a href="#" title="Please read the terms and conditions before accepting">Terms and conditions.</a> </label>
+      <input class="check form-check-input" type="checkbox" />
+     </div>
+
+     <div class="form-item">
+      <input type="submit" value="signup" class="login rounded" onclick="login()" />
+    </form>
    </div>
 
-  </div>
 
-  <div class="form">
-   <h3>Create an account</h3>
-   <form action="#" onsubmit="return validate()">
-
-    <div class="form-item">
-     <label class="label" for="email">
-      Email<input type="text" class="input" placeholder="Enter your email" required id="mail"/>
-     </label>
-    </div>
-
-    <div class="form-item">
-     <label class="label" for="username">
-      Username<input type="text" class="input" placeholder="Pick a username" required id="username" />
-     </label>
-    </div>
-
-
-    <div class="form-item">
-     <label class="label" for="password">
-      Password
-      <input type="password" class="input" placeholder="Create password" required id="password"/>
-     </label>
-    </div>
-
-    <div class="form-item">
-     <label class="label" for="confirmation">
-      Confirm<input type="password" class="input" placeholder="Confirm password" required id="confirm"/>
-     </label>
-    </div>
-    <div class="form-item">
-
-     <label for="remember"> <input class="check" type="checkbox" id="terms"/> I accept all <a href="terms.html"
-       title="Student Intellect Terms and Conditions">Terms and Conditons.</a> </label>
-    </div>
-    <div class="form-item">
-     <input type="submit" value="Sign up" class="login btn"/>
-
-   </form>
   </div>
  </div>
 
+
+ </div>
+ <!--Footer-->
+ <div class="footer bg-light shadow-sm text-center">
+  <p>
+   Copyrights &copy;
+   <a href="#" title="STUDENT INTELLECT">Student Intellect </a>2023
+  </p>
+  <nav class="bottom-nav">
+   <ul>
+    <li><a href="modules.html">About Us</a></li>
+    <li><a href="#">Privacy</a></li>
+    <li><a href="#">Terms </a></li>
+   </ul>
+  </nav>
+ </div>
 </body>
 
 </html>

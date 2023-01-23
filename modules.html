@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Student Intellect</title>
+ <link rel="stylesheet" href="styles.css" />
+ <script defer src="plugins/js/bootstrap.bundle.min.js"></script>
+ <link rel="stylesheet" href="plugins/css/bootstrap.min.css" />
+ <link rel="icon" type="image/x-icon" href="/images/fevicon.ico" />
+</head>
+
+<body>
+
+ <!--logo-->
+ <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm">
+  <div class="container">
+   <a href="#" class="navbar-brand logo">
+    <h1></h1>
+   </a>
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+    <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="menu">
+    <ul class="navbar-nav ms-auto">
+     <li class="nav-item"><a href="#" class="nav-link">Materials</a></li>
+     <li class="nav-item"><a href="#" class="nav-link">Tutoring</a></li>
+     <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+     <li class="nav-item"><a href="contact-us.html" class="nav-link">Contact</a></li>
+    </ul>
+   </div>
+  </div>
+ </nav>
+
+ <!--Hero section-->
+ <section class="p-2 background center">
+  <div class="container">
+   <div class="d-flex flex-column">
+
+    <div class="hero p-2 d-md-flex">
+     <div class="title lead flex-fill">
+      <h2>Get the best out of each study session with us!</h2>
+      <p>
+       Our primary goal is to make <i>quality tutoring</i> and
+       <i>resources</i> accessible to all students with ease ,
+       promoting better learning in South African Universities.
+      </p>
+
+      <div class="buttons ">
+       <button class="button large" data-bs-toggle="modal" data-bs-target="#select-modules" value="Select modules">select modules</button>
+      </div>
+     </div>
+
+     <div class="study p-2 center">
+      <img class="img-fluid" src="icons/ic_education.png" alt="books" class="education" style="max-height: 260px" />
+     </div>
+    </div>
+
+    <!--flex item two-->
+
+    <div class="card-deck">
+     <div class="card p-2 m-0.5">
+      <div class="card-body">
+       <div class="card-title"><h4>
+        Do you have any study materials?</h4>
+       </div>
+       <div class="card-text">
+        <p>
+         Upload them to our database and help the next student. We accept
+         previous,
+         exam papers,
+         assignments,
+         projects,
+         solutions and more.
+         </ul>
+         <i>Please make sure you have the permission from the
+          Copyrights holder before uploading any documents.</i>
+        </p>
+
+       </div>
+       <button class=" flex-column button" data-bs-toggle="modal" data-bs-target="#upload-documents">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+         ! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license
+         (Commercial License) Copyright 2022 Fonticons, Inc.
+         <path
+          d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-217c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l39-39V392c0 13.3 10.7 24 24 24s24-10.7 24-24V257.9l39 39c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-80-80c-9.4-9.4-24.6-9.4-33.9 0l-80 80z" />
+        </svg>
+        Upload
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+
+
+ </section>
+
+ <div class="footer bg-light shadow-sm text-center">
+ 
+  <p>Copyrights &copy; <a href="#" title="STUDENT INTELLECT">Student Intellect </a>2023</p>
+  <nav class="bottom-nav">
+      <ul><li><a href="#">About Us</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms </a></li>
+      </ul>
+  </nav>
+ 
+</div>
+
+<!--Modal for modules-->
+<div class="modal fade" id="select-modules" tabindex="-1" aria-labelledby="select modules"
+aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="select-label">SELECT MODULES</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+        </div>
+
+        <div class="modal-body">
+           modules here!
+        </div>
+
+        <div class="modal-footer">
+            <button type="button " class="btn btn-secondary close" data-bs-dismiss="modal">close</button>
+            <button type="button" class="btn btn-secondary save">Save</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<!--modal for uploading study materials-->
+
+<div class="modal fade" id="upload-documents" tabindex="-1" aria-labelledby="select modules"
+aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="select-label">Upload documents</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+        </div>
+
+        <div class="modal-body">
+           <div class="form">
+            <label for="module-code">
+                module-code*
+                <input type="text" class="input">
+            </label>
+
+            <label for="module-code">
+                study-material*(pdf)
+                <input type="file" class="input">
+            </label>
+
+            <label class="custom-file-label" for="module-code">
+                solutions*(pdf)
+                <input type="file" (change)="getFile($event)" class="input custom-file-input">
+            </label>
+            <label for="title">
+                material-title*
+                <input type="text" class="input">
+            </label>
+            <label for="number">
+                number*
+                <input type="number" class="input">
+            </label>
+
+            <label for="Year">
+                year*
+                <input type="number" class="input">
+            </label>
+           </div>
+        </div>
+
+        <div class="modal-footer">
+            <button type="button " class="btn btn-secondary close" data-bs-dismiss="modal">close</button>
+            <button type="button" class="btn btn-secondary save">Upload</button>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+
+</html>
